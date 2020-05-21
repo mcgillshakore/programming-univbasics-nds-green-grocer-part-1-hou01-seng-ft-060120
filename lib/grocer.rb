@@ -1,11 +1,10 @@
 def find_item_by_name_in_collection(name, collection)
-  counter = 0 
-  while counter < collection.length
-    if collection[counter][:item] == name
-      return collection[counter]
+  collection.each do |cart_item|
+    if cart_item[:item] == name
+    return cart_item
     end
-    counter += 1
   end
+  nil
 end
 
 def consolidate_cart(cart)
