@@ -16,12 +16,15 @@ def consolidate_cart(cart)
       new_cart.each do |new_cart_item|
         if new_cart_item[:item] == item_in_cart[:item]
           new_cart_item[:count] += 1 
-          
-          
-          
-      
+        end
+        new_cart_counter += 1
+      end
+    else
+      cart_item[:count] = 1
+      new_cart << cart_item
     end
   end
+  new_cart
 end
 
 
