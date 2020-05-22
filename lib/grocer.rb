@@ -10,7 +10,7 @@ end
 def consolidate_cart(cart)
   new_cart = []
   cart.each do |cart_item|
-    new_cart_item = find_item_by_name_in_collection(cart_item[:item, new_cart])
+    item_in_cart = find_item_by_name_in_collection(cart_item[:item, new_cart])
     if 
     
   end
